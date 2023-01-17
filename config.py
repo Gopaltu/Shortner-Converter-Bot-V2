@@ -12,8 +12,8 @@ API_HASH = os.environ.get("API_HASH", "Your Api Hash")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "Bot Token")
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split("Owner Id")] if os.environ.get("ADMINS") else []
 ADMIN = ADMINS
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "gopal")
-DATABASE_URL = os.getenv("DATABASE_URL", "Monfo url") 
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "dstamil")
+DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://gopal:gopal@cluster0.ql26uql.mongodb.net/?retryWrites=true&w=majority") 
 OWNER_ID =  int(os.environ.get("OWNER_ID", "1293572362")) 
 ADMINS.append("1293572362") if OWNER_ID not in ADMINS else []
 ADMINS.append("1293572362")
